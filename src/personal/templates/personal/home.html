@@ -21,19 +21,22 @@
 		width: 100%;
 	}
 	.create-post-bar{
-		background-color: #fff;
+		background-color: #111;
 		margin-bottom:20px;
 	}
 
 	.left-column{
 		padding:0px;
+		margin-top: 20px;
 	}
 
 	.right-column{
 		padding:0px;
+		margin-top: 40px;
 	}
 	.lead{
 		font-size: 17px;
+		color:#f2f2f2;
 	}
 </style>
 
@@ -48,9 +51,8 @@
 			<!-- Top 'create post' bar -->
 			<div class="d-lg-none mb-3">
 				<div class="card m-auto d-flex flex-column p-3">
-					<img class="img-fluid d-block m-auto pb-2" src="{% static 'codingwithmitch_logo.png' %}" width="72" height="72">
-					<p class="lead">In this course you'll learn how to build a simple blog with user registration and blog CRUD functionality. Django is a powerful 
-	  					framework and you'll see why in this course.</p>
+					<img class="img-fluid d-block m-auto pb-2" src="{% static 'LRlogo.png' %}" width="72" height="72">
+					<p class="lead">Bienvenido al foro de las rosas 🌹 La unica regla es: BARDEA</p>
 					<p class="m-auto"><a class="btn btn-primary" href="{% url 'blog:create' %}">Create post</a></p>
 				</div>
 			</div>
@@ -81,10 +83,9 @@
 		<div class="right-column col-lg-3 d-lg-flex d-none flex-column">
 
 			<div class="card create-post-bar d-flex flex-column p-3">
-				<img class="img-fluid d-block m-auto pb-2" src="{% static 'codingwithmitch_logo.png' %}" width="72" height="72">
-				<p class="lead">In this course you'll learn how to build a simple blog with user registration and blog CRUD functionality. Django is a powerful 
-  					framework and you'll see why in this course.</p>
-				<p class="m-auto"><a class="btn btn-primary" href="{% url 'blog:create' %}">Create post</a></p>
+				<img class="img-fluid d-block m-auto pb-2" src="{% static 'LRlogo.png' %}" width="80" height="80">
+				<p class="lead">Bienvenido al foro de las rosas 🌹 La unica regla es: BARDEA</p>
+				<p class="m-auto"><a class="btn btn-primary" href="{% url 'blog:create' %}">Crea tu post</a></p>
 			</div>
 		
 		</div>

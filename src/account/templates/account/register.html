@@ -40,6 +40,7 @@
 
   .h3{
     text-align: center;
+    color:#f2f2f2;
   }
 
 </style>
@@ -47,17 +48,17 @@
 
 <form class="form-signin" method="post">{% csrf_token %}
   <div class="d-flex flex-column pb-3">
-    <img class="img-fluid mx-auto d-block" src="{% static 'codingwithmitch_logo.png' %}" alt="Codignwithmitch logo image" width="72" height="72">
+    <img class="img-fluid mx-auto d-block" src="{% static 'LRlogo.png' %}" alt="Codignwithmitch logo image" width="72" height="72">
   </div>
-  <h1 class="h3 mb-3 font-weight-normal">Register an account</h1>
+  <h1 class="h3 mb-3 font-weight-normal">Registrar una cuenta</h1>
 
-  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email " required autofocus>
 
-  <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Username" required>
+  <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Nombre de usuario" required>
   
-  <input type="password" name="password1" id="inputPassword1" class="form-control" placeholder="Password" required>
+  <input type="password" name="password1" id="inputPassword1" class="form-control" placeholder="Contraseña" required>
 
-  <input type="password" name="password2" id="inputPassword2" class="form-control" placeholder="Confirm password" required>
+  <input type="password" name="password2" id="inputPassword2" class="form-control" placeholder="Confirmar Contraseña" required>
 
   {% for field in registration_form %}
       <p>
@@ -73,7 +74,7 @@
       
   {% endif %}
 
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
 
 </form>
 

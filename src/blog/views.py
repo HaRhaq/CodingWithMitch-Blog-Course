@@ -22,6 +22,7 @@ def create_blog_view(request):
 		obj.author = author
 		obj.save()
 		form = CreateBlogPostForm()
+		context['success_message'] = "Post Creado"
 
 	context['form'] = form
 
@@ -57,7 +58,7 @@ def edit_blog_view(request, slug):
 		if form.is_valid():
 			obj = form.save(commit=False)
 			obj.save()
-			context['success_message'] = "Updated"
+			context['success_message'] = "Post Modificado"
 			blog_post = obj
 
 	form = UpdateBlogPostForm(

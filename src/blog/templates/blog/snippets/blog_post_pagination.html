@@ -4,7 +4,7 @@
 <ul class="pagination pg-grey justify-content-center">
 	{% if blog_posts.has_previous %}
         <li class="page-item">
-		  <a class="page-link" href="?{% if query %}q={{query}}&{% endif %}page={{ blog_posts.previous_page_number }}">&laquo; Previous</a>
+		  <a class="page-link" href="?{% if query %}q={{query}}&{% endif %}page={{ blog_posts.previous_page_number }}">&laquo; Anterior</a>
 		</li>
     {% endif %}
 
@@ -18,10 +18,10 @@
     
     {% if blog_posts.has_next %}
     	<li class="page-item">
-		  <a class="page-link" href="?{% if query %}q={{query}}&{% endif %}page={{ blog_posts.next_page_number }}">Next</a>
+		  <a class="page-link" href="?{% if query %}q={{query}}&{% endif %}page={{ blog_posts.next_page_number }}">Siguiente</a>
 		</li>
 		<li class="page-item">
-		  <a class="page-link"  href="?{% if query %}q={{query}}&{% endif %}page={{ blog_posts.paginator.num_pages }}">Last &raquo;</a>
+		  <a class="page-link"  href="?{% if query %}q={{query}}&{% endif %}page={{ blog_posts.paginator.num_pages }}">Ultimo &raquo;</a>
 		</li>
     {% endif %}
 </ul>
